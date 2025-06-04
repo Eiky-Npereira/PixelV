@@ -225,7 +225,7 @@ header .container-grid {
 
 #servicos .card p {
     font-family: "Recursive", sans-linear;
-    font-size: 10px;
+    font-size: 15px;
     margin-bottom: 20px;
     line-height: 1.5;
 }
@@ -247,9 +247,7 @@ header .container-grid {
     fill: var(--verde-pixelV);
 }
 
-/* -----------------------------CAses de sucesso----------------------------- */
-
-#cases h2 {
+---------------------Cases de Sucesso--------------------- #cases h2 {
     margin-right: 5px;
 }
 
@@ -259,7 +257,6 @@ header .container-grid {
     align-items: center;
     gap: 50px;
     margin-bottom: 120px;
-
 }
 
 #cases img {
@@ -268,11 +265,26 @@ header .container-grid {
 }
 
 #meuCarrossel {
-    max-width: 1170;
+    max-width: 1170px;
     width: 90%;
 }
 
-/* -------------------------------contato------------------------------------ */
+/* ---------------------Contato-------------------- */
+
+#contato {
+    text-align: center;
+    padding-bottom: 100px;
+    margin-bottom: 100px;
+}
+
+#contato .titulo {
+    justify-content: center;
+    margin-bottom: 55px;
+}
+
+#contato-h2{
+    margin-left: 5px;
+}
 
 #contato {
     text-align: center;
@@ -303,14 +315,13 @@ header .container-grid {
 
     border-radius: 40px;
     background-color: var(--Contato);
-    border: solid 3px var(--roxo-pixelV);
+    border:solid 3px var(--roxo-pixelV);
 
     color: var(--preto);
     font-family: "Recursive", sans-linear;
     font-size: 17px;
 }
-
-.campo {
+.campo{
     width: 60%;
 
     text-align: left;
@@ -320,10 +331,13 @@ header .container-grid {
     justify-content: space-between;
 
     margin-bottom: 50px;
+
 }
 
-.campo-descricao {
+.campo-descricao{
     width: 60%;
+
+    text-align: left;
 
     display: flex;
     flex-direction: column;
@@ -332,7 +346,7 @@ header .container-grid {
     margin-bottom: 30px;
 }
 
-.campo input {
+.campo input{
     height: 40px;
 
     color: var(--preto);
@@ -347,7 +361,7 @@ header .container-grid {
 }
 
 
-.campo-descricao textarea {
+.campo-descricao textarea{
     color: var(--preto);
     background-color: var(--branco);
 
@@ -362,28 +376,28 @@ header .container-grid {
 }
 
 .campo-lable,
-.campo-descricao label {
+.campo-descricao label{
     margin-bottom: 15px;
 }
 
 .campo input,
-.campo-descricao textarea {
+.campo-descricao-textarea{
     font-family: "Recursive", sans-linear;
     font-size: 17px;
 
 }
 
 .campo input::placeholder,
-.campo-descricao textarea::placeholder {
-    color: #a0a0a0;
+.campo-descricao textarea::placeholder{
+    color: #aBaBaB;
 }
 
 .campo input:focus,
-.campo-descricao textarea:focus {
+.campo-descricao-textarea:focus{
     outline: 2px solid var(--verde-pixelV);
 }
 
-#contato form button {
+#contato form button{
     height: 40px;
     width: 60%;
 
@@ -401,9 +415,59 @@ header .container-grid {
 
     cursor: pointer;
 
-    transition: background-color 500ms;
+    transition: backgroud-color 500ms;
 }
 
 #contato form button:hover{
-    background-color: var(--verde-pixelV);  
+    background-color: var(--verde-pixelV);
 }
+
+/* --------footer--------- */
+footer{
+    height: 250px;
+    background-image: url(./imgs/footer.png);
+}
+
+footer img{
+    height: 90px;
+}
+
+footer .container-grid{
+    height: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.redes-sociais{
+    height: 50%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.redes-sociais p{
+    color: var(--branco);
+
+    font-family: "Recursive", sans-linear-bold;
+    font-size: 24px;
+}
+
+.incones-redes{
+    width: 240px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.incones-redes a{
+    color: var(--branco);
+}
+
+.incones-redes a:hover{
+    color: var(--verde-pixelV);
+}
+    
